@@ -1,6 +1,6 @@
 /*
 	https://www.codewars.com/kata/586dd26a69b6fd46dd0000c0/solutions/javascript
-	
+
   * task *
 
   make a interpreter for a esolang
@@ -24,9 +24,6 @@
 
 
 function myFirstInterpreter(code) {
-	console.log(code);
-	code = code.replace(/([^.+])/g, "");
-	console.log(code);
 	var arr = code.split("");
 	var count = 0;
 	var output = "";
@@ -40,9 +37,10 @@ function myFirstInterpreter(code) {
 		if (count >= 256) {
 			count = 0;
 		}
-	});
-
-  return output;
+  });
+  
+  console.log(output)
+	return output;
 }
 
   // Hello World Program - outputs the string "Hello, World!"
